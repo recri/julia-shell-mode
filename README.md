@@ -2,6 +2,9 @@
 [![MELPA](http://melpa.org/packages/julia-shell-badge.svg)](http://melpa.org/#/julia-shell)
 ### Emacs major mode for an interactive [Julia](http://julialang.org/) shell
 ![Screenshot](./img/screenshot.png)
+## Preface
+
+A fork of `julia-shell-mode` to cure problems interacting with Julia 1.0.
 
 ## Introduction
 

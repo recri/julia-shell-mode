@@ -87,6 +87,11 @@ By default, the following arguments are sent to julia:
   :group 'julia-shell)
 
 ;;; Internal variables ========================================================
+(defun julia-shell-switch-to-other-buffer ()
+  "Display the previously displayed buffer in the current window.
+Equivalent to C-x b and selecting the default buffer."
+  (interactive)
+  (switch-to-buffer (other-buffer)))
 
 (defvar inferior-julia-shell-mode-map
   (let ((map (nconc (make-sparse-keymap) comint-mode-map)))
@@ -95,6 +100,7 @@ By default, the following arguments are sent to julia:
     (define-key map [up] 'comint-previous-input)
     (define-key map [down] 'comint-next-input)
     (define-key map [(backspace)] 'julia-shell-delete-backwards-no-prompt)
+    (define-key map "\e\C-l" 'julia-shell-switch-to-other-buffer)
     map)
   "Basic mode map for `inferior-julia-shell-mode'.")
 
