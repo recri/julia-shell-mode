@@ -1,0 +1,5 @@
+[x] access to REPLCompletions broken
+[x] inline import EmacsTools module broken
+[ ] no julia-shell-mode-hooks
+[ ] doesn't implement REPL ; shell mode
+[ ] doesn't implement REPL ? help mode
