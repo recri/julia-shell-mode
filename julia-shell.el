@@ -47,7 +47,7 @@
 ;;; Code:
 
 (require 'comint)
-(require 'julia-mode) ;; since we're using latexsubs
+(require 'julia-mode) ;; since we're using julia-mode-latexsubs
 
 ;;; User-changeable variables =================================================
 
@@ -318,7 +318,7 @@ If the command is a LaTeX symbol, replace it with its unicode character."
     ;; a list of latex subs from julia on launch and build
     ;; the hash table in julia-shell mode. This can
     ;; done in the EmacsTools julia module.
-    (setq latexsub (gethash lastcmd julia-latexsubs))
+    (setq latexsub (gethash lastcmd julia-mode-latexsubs))
     (goto-char (point-max))
     (if latexsub
         (progn (insert latexsub)

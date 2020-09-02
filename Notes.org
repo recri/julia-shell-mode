@@ -1,5 +1,7 @@
-[x] access to REPLCompletions broken
 [x] inline import EmacsTools module broken
+	comment out "import EmacsTools"
+[x] tab completion at point broken
+	change julia-latexsubs to julia-mode-latexsubs
 [ ] no julia-shell-mode-hooks
 [ ] doesn't implement REPL ; shell mode
 [ ] doesn't implement REPL ? help mode
